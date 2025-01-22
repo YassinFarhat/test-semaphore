@@ -2,6 +2,7 @@
 - name: Create text file in root directory
   hosts: all
   become: yes
+  remote_user: root
   tasks:
     - name: Create a.txt file
       copy:
