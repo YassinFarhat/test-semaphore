@@ -1,5 +1,3 @@
 #!/bin/bash
 
-cd /root/
-
-touch a.txt
+sudo touch /root/a.txt
