@@ -9,7 +9,7 @@
     - name: Create a.txt file
       copy:
         content: "File created by Ansible\n"
-        dest: /root/a.txt
-        owner: root
-        group: root
+        dest: /home/semaphore/a.txt
+        owner: semaphore
+        group: semaphore
         mode: '0644'
