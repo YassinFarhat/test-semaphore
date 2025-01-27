@@ -1,0 +1,13 @@
+---
+- name: Ejecutar comando ls en el host remoto
+  hosts: all  # Puedes cambiarlo por el grupo de hosts específico
+  gather_facts: no
+
+  tasks:
+    - name: Listar archivos en el directorio especificado
+      command: ls -la /
+      register: resultado_ls
+
+    - name: Mostrar resultado del ls
+      debug:
+        var: resultado_ls.stdout_lines
